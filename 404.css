@@ -44,8 +44,8 @@
 * { margin: 0px; padding: 0px; }
 
 /**Icon Hover Effect 4**/
-.hover-effect4 { min-height: 200px; background: #edeff0; text-align: center; }
+.hover-effect4 { min-height: 100px; background: #edeff0; text-align: center; }
 .hover-effect4 ul { padding-top: 50px; }
 .hover-effect4 ul li { display: inline-block; }
-.hover-effect4 ul li a { font-size: 40px; color: #fff; margin: 0px 10px; line-height: 100px; display: inline-block; width: 90px; height: 90px; background: #00695C; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
-.hover-effect4 ul li:hover a { background: #00695C; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+.hover-effect4 ul li a { font-size: 40px; color: #fff; margin: 0px 10px; line-height: 100px; display: inline-block; width: 90px; height: 90px; background: #1b1f1e; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.hover-effect4 ul li:hover a { background: #141a19; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
