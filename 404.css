@@ -1,141 +1,61 @@
-@import "compass/css3";
+@font-face {
+	font-family: "Nolan";
+	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Nolan-Regular.ttf") format("truetype");
+  }
+  *, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	padding: 20px;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #edeff0;
+	font-family: "Nolan", sans-serif;
+  }
+  
+  .logo {
+	top: 70px;
+	width: 100px;
+	margin-top: -50px;
+	position: relative;
+	animation-name: dips;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+  }
+  
+  .copyright {
+	font-size: 16px;
+	margin-top: 10px;
+	color: #78909C;
+  }
 
-body{background:#eee;}
 
-.scene{
-  position:absolute; 
-  width:400px;
-  height:200px;
-  top:50%;
-  left:50%;
-  margin-top:-100px;
-  margin-left:-200px;
-  overflow:hidden;
-  &:after{
-    content:" ";
-    left:0;
-    top:0;
-    bottom:0;
-    width:100px;
-    @include background-image(linear-gradient(to right, #eee, rgba(#eee,0)));
-    position:absolute;
-  }
-  &:before{
-    content:" ";
-    right:0;
-    top:0;
-    bottom:0;
-    width:100px;
-    @include background-image(linear-gradient(to left, #eee, rgba(#eee,0)));
-    position:absolute;
-    z-index:10;
-  }
-  em{
-    display:none;
-    position:absolute;
-    bottom:20px;
-    left:55px;
-    right:0;
-    text-align:center;
-    font-style:normal;
-    font-family:Proxima Nova;
-    color:#0bb4a6;
-    letter-spacing:0.2em;
-  }
-}
 
-.car{
-  position:absolute;
-  top:70px;
-  left:50%;
-  margin-left:-30px;
-  animation: peel 4s ease-in-out forwards infinite, bump 0.2s linear infinite;
-}
 
-.poof{
-  position:absolute;
-  top:110px; 
-  left:160px;
-  margin-left:-30px;
-  opacity:0;
-  animation: poof 4s ease-in-out forwards infinite;
-}
+  /*
+Codepen : Social Icons Hover Effects
+Author: Hassan Siraj
+Github URI: https://github.com/hassan-siraj/social-icons-hover-effects/blob/master/index.html
+Description: Social Icons Hover Effects.
+Version: 1.0
+*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);
+* { margin: 0px; padding: 0px; }
 
-.sign{
-  position:absolute;
-  right:-40px;
-  top:30px;
-  animation: sign 4s ease-in-out forwards infinite;
-}
-
-@keyframes sign {
-  0% {
-    right:-40px;
-  }
-  30% {
-    right:80px; 
-  }
-  70% {
-    right:80px;
-  }
-  100% {
-    right:100%;
-  }
-}
-
-@keyframes peel {
-  0% {
-    transform: rotate(0deg);
-  }
-  70% {
-    transform: rotate(0deg); 
-  }
-  73% {
-    transform: rotate(-9deg);
-  }
-  95% {
-    transform: rotate(-9deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes poof {
-  0% {
-    opacity:0;
-    transform: scale(1.0);
-  }
-  70% {
-    opacity:0;
-    left:170px;
-    transform: scale(1.0);
-  }
-  76% {
-    opacity:1;
-    transform: scale(1.3);
-    left:160px;
-  }
-  95% {
-    opacity:0;
-  }
-  100% {
-    opacity:0;
-    transform: scale(1.3);
-  }
-}
-
-@keyframes bump {
-  0% {
-    top:70px;
-  }
-  50% {
-    top:70px;
-  }
-  60% {
-    top:69px;
-  }
-  100% {
-    top:70px;
-  }
-}
+/**Icon Hover Effect 4**/
+.hover-effect4 { min-height: 200px; background: #edeff0; text-align: center; }
+.hover-effect4 ul { padding-top: 50px; }
+.hover-effect4 ul li { display: inline-block; }
+.hover-effect4 ul li a { font-size: 40px; color: #fff; margin: 0px 10px; line-height: 100px; display: inline-block; width: 90px; height: 90px; background: #00695C; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.hover-effect4 ul li:hover a { background: #00695C; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
