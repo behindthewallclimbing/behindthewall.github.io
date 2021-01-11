@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Behind The Wall</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 </head>
 
 <body>
     <div>
-        <img class="behind-the-wall" src="assets/logo.svg" style="width:600px" />
+        <picture>
+            <img src="assets/logo.svg" style="width:400px;">
+        </picture>
     </div>
-    <!-- <div class="copyright">Something big is coming</div> -->
-    <div class="hover-effect">
+    <div class="hover-effect container">
         <ul>
             <li><a href="https://www.youtube.com/channel/UClKiLfRtr7JED8NnvkV-iCA" title="Youtube"><i
                         class="fab fa-youtube"></i></a></li>
@@ -25,7 +31,28 @@
                         class="fab fa-patreon"></i></a></li>
         </ul>
     </div>
-    <div class="copyright">&copy; 2021 | behind the wall</div>
+    <div class="row">
+        <div class="container col-md-12">
+            <div class="typewriter">
+                <h1>"Limits are meant to be broken"</h1>
+            </div>
+            <h3>Sign up to get an early access discounts in our shop!</h3>
+            <form action="https://shop.us7.list-manage.com/subscribe/post?u=2886e55f6bae49cb025642e04&amp;id=0e75f28b25"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                    placeholder="lovely-human@example.com" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+                </div>
+                <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+                <div id="subscribe-result">
+                </div>
+            </form>
+            <div class="copyright">&copy; 2021 | BehindTheWall</div>
+        </div>
+
+    </div>
 </body>
 
 </html>
