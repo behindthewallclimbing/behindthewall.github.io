@@ -2,6 +2,7 @@
 	font-family: "Nolan";
 	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/312465/Nolan-Regular.ttf") format("truetype");
   }
+
 @font-face {
 	font-family: "Steelworks";
 	src: url("assets/Steelworks.ttf") format("truetype");
@@ -12,6 +13,16 @@
 	box-sizing: border-box;
   }
   
+  h3 {
+	display: block;
+	font-size: 2em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+  }
+
   body {
 	padding: 20px;
 	display: flex;
@@ -21,6 +32,7 @@
 	justify-content: center;
 	background-color: #edeff0;
 	font-family: "Nolan", sans-serif;
+	line-height: 1.7em;
   }
   
   .logo {
@@ -39,18 +51,260 @@
   }
   
   .copyright {
-	font-size: 20px;
-	margin-top: 40px;
+	font-size: 17px;
 	color: #78909C;
-	font-family: "Steelworks", sans-serif;
+	font-family: Monaco, monospace;
   }
+
+/*  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.button {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
+	background: #232525;
+	border-radius: 0.25em;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 500;
+	height: 3em;
+	line-height: 3em;
+	padding: 0 1em;
+  }
+  .button:hover {
+	background-color: #303131;
+  }
+
+.details-modal {
+	background: #ffffff;
+	border-radius: 0.5em;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	left: 50%;
+	max-width: 90%;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 30em;
+	text-align: left;
+	max-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	font-family: "Nolan", sans-serif;
+	line-height: 1.7em;
+  }
+  .details-modal .details-modal-close {
+	align-items: center;
+	color: #111827;
+	display: flex;
+	height: 4.5em;
+	justify-content: center;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 4.5em;
+  }
+  .details-modal .details-modal-close svg {
+	display: block;
+  }
+  .details-modal .details-modal-title {
+	color: #111827;
+	padding: 1.5em 2em;
+	pointer-events: all;
+	position: relative;
+	width: calc(100% - 4.5em);
+  }
+  .details-modal .details-modal-title h1 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: normal;
+  }
+  .details-modal .details-modal-content {
+	border-top: 1px solid #e0e0e0;
+	padding: 2em;
+	pointer-events: all;
+	overflow: auto;
+  }
+  
+  .details-modal-overlay {
+	transition: opacity 0.2s ease-out;
+	pointer-events: none;
+	background: rgba(15, 23, 42, 0.8);
+	position: fixed;
+	opacity: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+  }
+  details[open] .details-modal-overlay {
+	pointer-events: all;
+	opacity: 0.5;
+  }
+  
+  details summary:focus {
+	outline: none;
+  }
+  details summary::-webkit-details-marker {
+	display: none;
+  }
+  
+  code {
+	font-family: Monaco, monospace;
+	line-height: 100%;
+	background-color: #2d2d2c;
+	padding: 0.3em 0.3em;
+	letter-spacing: -0.05em;
+	word-break: normal;
+	border-radius: 7px;
+	color: white;
+	font-weight: normal;
+	font-size: 1.75rem;
+	position: relative;
+	top: -2px;
+	line-height: 2em;
+	max-width: 40em;
+  }
+  
+  .container {
+	margin-top: 2em;
+	text-align: center;
+	max-width: 40em;
+	padding: 0.1em 0.4em;
+	line-height: 6em;
+  }
+  .container > h1 {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: normal;
+	color: #111827;
+	line-height: 2em;
+  }
+  .container > p {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2em;
+  }
+  .container sup {
+	font-size: 1rem;
+	margin-left: 0.25em;
+	opacity: 0.5;
+	position: relative;
+  }
+
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);
 * { margin: 0px; padding: 0px; }
 
-/**Icon Hover Effect **/
-.hover-effect { min-height: 100px; background: #edeff0; text-align: center; }
+.hover-effect { min-height: 100px; background: #ffffff; text-align: center; }
 .hover-effect ul { padding-top: 50px; }
 .hover-effect ul li { display: inline-block; }
 .hover-effect ul li a { font-size: 40px; color: #fff; margin: 0px 10px; line-height: 100px; display: inline-block; width: 90px; height: 90px; background: #232525; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
 .hover-effect ul li:hover a { background: #303131; -moz-transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+
+.typewriter h1 {
+	font-family: Monaco, monospace;
+	line-height: 100%;
+	background-color: #2d2d2c;
+	padding: 0.4em 0.4em;
+	letter-spacing: -0.01em;
+	word-break: normal;
+	border-radius: 10px;
+	color: white;
+	font-weight: normal;
+	font-size: 2rem;
+	position: relative;
+	top: -2px;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
+  }
+
+
+input {
+    border: 1px solid rgb(220, 219, 235);
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+    color: #000;
+    transition: all .15s ease-in;
+}
+
+input[type=email] {
+	width: 60%;
+	line-height: 2em;
+}
+
+input[type=submit] {
+    background-color:orange;
+    color: #fff;
+    font-weight: bold;
+	border: 1px solid transparent;
+	line-height: 2em;
+}
+
+input[type=submit]::focus {
+    border: 1px solid #fff;
+}
+
+input:focus {
+    border-color: rgb(73, 76, 80);
+    box-shadow: #78909C;
+    outline: none;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+#subscribe-result p {
+    margin-top: 35px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+  }
+
+.wrapper {
+    width: 50%;
+    max-width: 600px;
+    margin: 20% auto;
+}
+
+.box {
+    box-shadow: 0px 0px 10px #afc0d9;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: .25rem;
+    text-align: center;
+}
