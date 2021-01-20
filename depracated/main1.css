@@ -1,0 +1,128 @@
+
+* ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html {
+    min-height: 50vh;
+    background: #FEDCC8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  html body .heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  html body .heading p {
+    margin: 0;
+  }
+  html body .heading a {
+    color: #fff;
+    display: inline-block;
+  }
+  html body .heading a .fab {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 75%;
+    box-shadow: 0 12px 1rem rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+  .container .left {
+    padding: 6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .container .left .logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+  }
+  .container .left .logo:before {
+    content: "{{";
+    font-size: 4.5rem;
+    line-height: 3rem;
+    position: relative;
+    top: 1rem;
+    right: 0.75rem;
+  }
+  .container .left .logo:after {
+    content: "}}";
+    font-size: 4.5rem;
+    line-height: 3rem;
+    position: relative;
+    top: 1rem;
+    left: 0.75rem;
+    transition: 2s;
+  }
+  .container .left .logo .brand {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0;
+  }
+  .container .left .logo .pages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 4rem;
+    width: auto;
+    position: relative;
+    overflow-y: scroll;
+    pointer-events: none;
+  }
+  .container .left .logo .pages .page {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding: 1rem 0;
+    font-weight: 100;
+    max-width: 0;
+    transition: all 1s;
+  }
+  .container .left .logo .pages .page.active {
+    max-width: 10rem;
+  }
+  .container .right {
+    background-color: #FEDCC8;
+    flex-shrink: 0;
+  }
+  .container .right .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .container .right .nav a {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #485563;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .container .right .nav a:hover {
+    opacity: 1;
+  }

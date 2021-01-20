@@ -2,57 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Behind The Wall</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Behind The Wall</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
-<body>
-    <div>
-        <picture>
-            <img src="assets/logo.svg" style="width:350px;">
-        </picture>
-    </div>
-    <div class="hover-effect container">
-        <ul>
-            <li><a href="https://www.youtube.com/channel/UClKiLfRtr7JED8NnvkV-iCA" title="Youtube"><i
-                        class="fab fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/behindthewallclimbing" title="Instagram"><i
-                        class="fab fa-instagram"></i></a></li>
-            <li><a href="https://open.spotify.com/user/4t559uwkrd6vrahvfwgkhzfzg" title="Spotify"><i
-                        class="fab fa-spotify"></i></a></li>
-            <li><a href="https://www.patreon.com/behindthewallclimbing" title="Patreon"><i
-                        class="fab fa-patreon"></i></a></li>
-        </ul>
-    </div>
-    <div class="row">
-        <div class="container col-sm-12">
-            <div class="typewriter">
-                <h1>"Limits are meant to be broken"</h1>
+<section class="showcase">
+  <header>
+    <h2 class="logo"><img src="logo.svg" alt="" width="80"></h2>
+    <div class="toggle"></div>
+  </header>
+  <!--Generate new videos with >> https://ymp4.download/en5/ use 720p output-->
+  <video src="video.mp4" muted loop autoplay></video>
+  <div class="overlay"></div>
+  <div class="text">
+    <h2>Behind The Wall</h2>
+    <!-- <h3>"Limits are meant to be broken"</h3> -->
+    <p>We created <strong>BehindtheWall</strong> in 2020 as a way to share our passion for Bouldering.
+      Since then we have grown our YouTube channel through sharing regular videos of our projects,
+      challenges and adventures in the hope to inspire others to give bouldering a try.</p>
+    <p>Sign up to get early access discounts in our shop!</p>
+    <!-- <a href="#" >Sign Up</a> -->
+
+
+    <!--modal-->
+  <label class="viewOpen" for="modal-state">Subscribe<i class="fa fa-clock-o"></i></label>
+  <input type="checkbox" name="modal-state" id="modal-state">
+  <div class="modal-overlay">
+    <label for="modal-state" class="modal-overlay-close"></label>
+    <div class="modal">
+      <label class="button-close" for="modal-state"><i class="fa fa-times"></i></label>
+      <h2>Sign Me up</h2>
+      <p>We are offering a <strong>10%</strong> discount off any online purchase to all Early Birds that you can use in our online shop when we launch!</p>
+      <p><strong>All we need is your email address and we will be in touch!</strong></p>
+      <form action="https://shop.us7.list-manage.com/subscribe/post?u=2886e55f6bae49cb025642e04&amp;id=0e75f28b25"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                placeholder="biggest-fan@example.com" required>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
             </div>
-            <p>Sign up to get an early access discounts in our shop!</p>
-            <form action="https://shop.us7.list-manage.com/subscribe/post?u=2886e55f6bae49cb025642e04&amp;id=0e75f28b25"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                    placeholder="lovely-human@example.com" required>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
-                </div>
-                <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
-                <div id="subscribe-result">
-                </div>
-            </form>
-            <div class="copyright">&copy; 2021 | BehindTheWall</div>
-        </div>
-
+            <input type="submit" value="SIGN ME UP" name="subscribe" id="mc-embedded-subscribe" class="button">
+            <div id="subscribe-result">
+            </div>
+        </form>
+        
     </div>
-</body>
+  </div>
+
+<!--end of modal-->
+
+
+
+
+
+  </div>
+
+
+
+  <ul class="social">
+    <li><a href="https://www.youtube.com/channel/UClKiLfRtr7JED8NnvkV-iCA" title="Youtube"><i
+          class="fab fa-youtube fa-4x"></i></a></li>
+    <li><a href="https://www.instagram.com/behindthewallclimbing" title="Instagram"><i
+          class="fab fa-instagram fa-4x"></i></a></li>
+    <li><a href="https://open.spotify.com/user/4t559uwkrd6vrahvfwgkhzfzg" title="Spotify"><i
+          class="fab fa-spotify fa-4x"></i></a></li>
+    <li><a href="https://www.patreon.com/behindthewallclimbing" title="Patreon"><i class="fab fa-patreon fa-4x"></i></a>
+    </li>
+  </ul>
+</section>
+
+
+<div class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">The Crew</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
 
 </html>
