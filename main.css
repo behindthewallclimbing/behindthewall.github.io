@@ -413,13 +413,14 @@ form > input[type="email"] {
 input {
   border: none;
   background: hsl(0, 0%, 93%);
-  /* border-radius: .25rem; */
+  border-radius: 0rem;
   padding: .75rem 1rem
 }
 
 input[type="submit"] {
     background: rgb(87, 10, 87);
     color: white;
+    border-radius: 0rem;
   }
 
 
