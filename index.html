@@ -6,17 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Behind The Wall</title>
   <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="dist/jquery.boilerplate.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <section class="showcase">
   <header>
     <h2 class="logo"><img src="logo.svg" alt="" width="60"></h2>
     <!-- <div class="toggle"></div>  enable toggle for menu selector-->
+
+    <input type='checkbox' id='toggle' style='display:none;' />
+    <label class='toggle-btn toggle-btn__cross' for='toggle'>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+    <nav>
+        <h1>SORRY FOR ALL THE DUST!</h1>
+        <p>We know it’s taking a while but sit tight and we’ll be with you soon</p>
+        <br>
+        <p>In the meantime, check out our products on Instagram</p>
+        <br>
+        <a href="https://www.instagram.com/behindthewallclimbing" title="Instagram"><i
+          class="fab fa-instagram fa-5x"></i></a>
+    </nav>
   </header>
   <!--Generate new videos with >> https://ymp4.download/en5/ use 720p output-->
-  <video src="video.mp4" autoplay loop muted playsinline ></video>
+  <video src="video.mp4" autoplay loop muted playsinline></video>
   <div class="overlay"></div>
   <div class="text">
     <h2>Behind The Wall</h2>
@@ -26,44 +46,34 @@
       challenges and adventures in the hope to inspire others to give bouldering a try.</p>
     <p>Sign up to get early access discounts in our shop!</p>
     <!-- <a href="#" >Sign Up</a> -->
-
-
     <!--modal-->
-  <label class="viewOpen" for="modal-state">Subscribe<i class="fa fa-clock-o"></i></label>
-  <input type="checkbox" name="modal-state" id="modal-state">
-  <div class="modal-overlay">
-    <label for="modal-state" class="modal-overlay-close"></label>
-    <div class="modal">
-      <label class="button-close" for="modal-state"><i class="fa fa-times"></i></label>
-      <h2>Sign Me up</h2>
-      <p>We are offering a <strong>10%</strong> discount off any online purchase to all Early Birds that you can use in our online shop when we launch!</p>
-      <p><strong>All we need is your email address and we will be in touch!</strong></p>
-      <form action="https://shop.us7.list-manage.com/subscribe/post?u=2886e55f6bae49cb025642e04&amp;id=0e75f28b25"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank" novalidate>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                placeholder="biggest-fan@example.com" required>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
-            </div>
-            <input type="submit" value="SIGN ME UP" name="subscribe" id="mc-embedded-subscribe" class="button">
-            <div id="subscribe-result">
-            </div>
+    <label class="viewOpen" for="modal-state">Subscribe<i class="fa fa-clock-o"></i></label>
+    <input type="checkbox" name="modal-state" id="modal-state">
+    <div class="modal-overlay">
+      <label for="modal-state" class="modal-overlay-close"></label>
+      <div class="modal">
+        <label class="button-close" for="modal-state"><i class="fa fa-times"></i></label>
+        <h2>Subscribe</h2>
+        <p>We are offering a <strong>10%</strong> discount off any online purchase to all Early Birds that you can use
+          in our online shop when we launch!</p>
+        <p><strong>All we need is your email address and we will be in touch!</strong></p>
+        <form action="https://shop.us7.list-manage.com/subscribe/post?u=2886e55f6bae49cb025642e04&amp;id=0e75f28b25"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="biggest-fan@example.com"
+            required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+          </div>
+          <input type="submit" value="SIGN ME UP" name="subscribe" id="mc-embedded-subscribe" class="button">
+          <div id="subscribe-result">
+          </div>
         </form>
 
+      </div>
     </div>
+    <!--end of modal-->
   </div>
-
-<!--end of modal-->
-
-
-
-
-
-  </div>
-
-
-
   <ul class="social">
     <li><a href="https://www.youtube.com/channel/UClKiLfRtr7JED8NnvkV-iCA" title="Youtube"><i
           class="fab fa-youtube fa-4x"></i></a></li>
@@ -74,18 +84,7 @@
     <li><a href="https://www.patreon.com/behindthewallclimbing" title="Patreon"><i class="fab fa-patreon fa-4x"></i></a>
     </li>
   </ul>
+  <a class="signature" href="https://behindthewall.shop" target="_blank">Made with ♥ by BehindTheWall</a>
 </section>
-
-
-<div class="menu">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Shop</a></li>
-    <li><a href="#">The Crew</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
-
 
 </html>
